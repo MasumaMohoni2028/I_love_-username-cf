@@ -1,0 +1,29 @@
+// pashapashi values barlei just count barbe.Initially emon e mone hoi.Gotta try if else condition wisely .But how to do that!
+#include <bits/stdc++.h>
+using namespace std;
+#define ll long long
+#define op() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+const int mx=5e3+123;
+int a[mx];
+int main()
+{
+op();
+int n,points,count=0;
+cin>>n>>points;
+int min=points,max=points;
+while(--n)
+{
+   cin>>points;
+   if(points<min)//egula mone rakhar try korbo
+   {
+      min=points;
+      count++;
+   }
+   if(points>max)
+   {
+      max=points;
+      count++;
+   }
+}
+cout<<count<<endl;
+}
